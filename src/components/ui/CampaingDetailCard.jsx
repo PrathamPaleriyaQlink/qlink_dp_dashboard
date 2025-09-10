@@ -6,7 +6,7 @@ const CampaingDetailCard = ({title, data, col1, col2, col3, col4, col1Val, col2V
     <div className="my-7 w-full  h-fit bg-[#1e1e1e] rounded-xl py-7">
       <div className="text-2xl px-7">{title}</div>
       <Divider />
-      <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-5 px-7 py-4">
+      <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-3 gap-5 px-7 py-4">
         <div className="space-y-2">
           <div>{col1}</div>
           <div className="text-3xl">{col1Val}</div>

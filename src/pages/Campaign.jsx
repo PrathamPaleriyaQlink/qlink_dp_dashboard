@@ -290,11 +290,9 @@ const Campaign = () => {
           col1={"Total Messages Sent"}
           col2={"Total Seen"}
           col3={"Total Delivered"}
-          col4={"Total Failed"}
           col1Val={stats.total || "N/A"}
           col2Val={stats.total_seen || "N/A"}
           col3Val={stats.total_delivered || "N/A"}
-          col4Val={stats.total_failed || "N/A"}
         />
       ) : (
         <div className="w-full h-[200px] bg-[#1e1e1e] rounded-xl text-white/80 flex items-center justify-center">
