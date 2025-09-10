@@ -63,6 +63,14 @@ export async function listCampaigns() {
   return res.json();
 }
 
+export async function getAnalytics() {
+  const res = await fetch(`${BASE_URL}/analytics`, {
+    headers: authHeaders(),
+  });
+  if (!res.ok) throw new Error("Failed to fetch analytics");
+  return res.json();
+}
+
 export async function getCampaignById(campaignId) {
   const res = await fetch(`${BASE_URL}/campaign/${campaignId}`, {
     headers: authHeaders(),
