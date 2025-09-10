@@ -23,15 +23,15 @@ function authHeadersMultipart() {
 
 // ---------- Auth ----------
 export async function login(username, password) {
-  const url = `${BASE_URL}/login?username=${username}&password=${password}`;
-
-  const response = await fetch(url, {
-    method: "POST", // backend still expects POST
+  const res = await fetch(`${BASE_URL}/login`, {
+    method: "POST",
+    headers: { "Content-Type": "application/json" },
+    body: JSON.stringify({ username, password }),
   });
 
-  if (!response.ok) throw new Error("Login failed");
+  if (!res.ok) throw new Error("Login failed");
 
-  const data = await response.json();
+  const data = await res.json();
   const expiresIn = 60 * 60 * 1000; // 1 hr
   const now = new Date().getTime();
 
