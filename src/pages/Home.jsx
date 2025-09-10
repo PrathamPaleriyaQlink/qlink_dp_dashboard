@@ -14,7 +14,7 @@ const Home = () => {
         toast.current.show({severity:'error', summary: 'Error Occured while fetching details, Please Refresh.', detail:alert , life: 3000});
     }
 
-  // const fetchData = async () => {
+  const fetchData = async () => {
   //     setLoading(true);
   //     try {
   //       const res = await getAnalytics();
@@ -28,7 +28,7 @@ const Home = () => {
   //       });
   //     }
   //     setLoading(false);
-  //   };
+    };
   
 
     useEffect(() => {
