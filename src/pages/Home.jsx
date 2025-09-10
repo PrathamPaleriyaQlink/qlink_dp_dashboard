@@ -70,12 +70,6 @@ const Home = () => {
             color="bg-teal-500"
           />
           <StatsCard 
-            title={"Total Failed"}
-            value={data.total_failed}
-            icon={"times-circle"}
-            color="bg-red-500"
-          />
-          <StatsCard 
             title={"Success Rate (%)"}
             value={data.success_rate.toFixed(2)}
             icon={"percentage"}
