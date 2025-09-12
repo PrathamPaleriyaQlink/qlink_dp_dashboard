@@ -154,17 +154,17 @@ const Campaign = () => {
     }
   };
 
-  useEffect(() => {
-    if (!selectCampaign) return;
+  // useEffect(() => {
+  //   if (!selectCampaign) return;
 
-    fetchStats(selectCampaign.id);
+  //   fetchStats(selectCampaign.id);
 
-    const interval = setInterval(() => {
-      fetchStats(selectCampaign.id);
-    }, 1 * 60 * 1000); 
+  //   const interval = setInterval(() => {
+  //     fetchStats(selectCampaign.id);
+  //   }, 1 * 60 * 1000); 
 
-    return () => clearInterval(interval); 
-  }, [selectCampaign]);
+  //   return () => clearInterval(interval); 
+  // }, [selectCampaign]);
 
   return (
     <div className="my-10">
